@@ -37,7 +37,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="valor_minimo">Valor Mínimo</label>
-                    <input value="{{ old('valor_minimo', $servico->valor_minimo ?? '') }}" type="input"  class="form-control" name="valor_minimo" id="valor_minimo" required placeholder="Valor mínimo do serviço">
+                    <input value="{{ old('valor_minimo', $servico->valor_minimo ?? '') }}" type="input"  class="form-control" name="valor_minimo" data-mask="#.##0,00" data-mask-reverse="true" id="valor_minimo" required placeholder="Valor mínimo do serviço">
                 </div>
             </div>
             <div class="col-md-4">
@@ -61,7 +61,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="valor_quarto">Valor por Quarto</label>
-                    <input value="{{ old('valor_quarto', $servico->valor_quarto ?? '') }}" type="input"  class="form-control" name="valor_quarto" id="valor_quarto" required placeholder="Valor por quarto">
+                    <input value="{{ old('valor_quarto', $servico->valor_quarto ?? '') }}" type="input"  class="form-control" name="valor_quarto" id="valor_quarto" data-mask="#.##0,00" data-mask-reverse="true" required placeholder="Valor por quarto">
                 </div>
             </div>
             <div class="col-md-6">
@@ -76,7 +76,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="valor_sala">Valor por sala</label>
-                    <input value="{{ old('valor_sala', $servico->valor_sala ?? '') }}" type="input"  class="form-control" name="valor_sala" id="valor_sala" required placeholder="Valor por sala">
+                    <input value="{{ old('valor_sala', $servico->valor_sala ?? '') }}" type="input"  class="form-control" name="valor_sala" id="valor_sala" data-mask="#.##0,00" data-mask-reverse="true" required placeholder="Valor por sala">
                 </div>
             </div>
             <div class="col-md-6">
@@ -91,7 +91,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="valor_banheiro">Valor por banheiro</label>
-                    <input value="{{ old('valor_banheiro', $servico->valor_banheiro ?? '') }}" type="input"  class="form-control" name="valor_banheiro" id="valor_banheiro" required placeholder="Valor por banheiro">
+                    <input value="{{ old('valor_banheiro', $servico->valor_banheiro ?? '') }}" type="input"  class="form-control" name="valor_banheiro" id="valor_banheiro" data-mask="#.##0,00" data-mask-reverse="true" required placeholder="Valor por banheiro">
                 </div>
             </div>
             <div class="col-md-6">
@@ -106,7 +106,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="valor_cozinha">Valor por cozinha</label>
-                    <input value="{{ old('valor_cozinha', $servico->valor_cozinha ?? '') }}" type="input"  class="form-control" name="valor_cozinha" id="valor_cozinha" required placeholder="Valor por cozinha">
+                    <input value="{{ old('valor_cozinha', $servico->valor_cozinha ?? '') }}" type="input"  class="form-control" name="valor_cozinha" id="valor_cozinha" data-mask="#.##0,00" data-mask-reverse="true" required placeholder="Valor por cozinha">
                 </div>
             </div>
             <div class="col-md-6">
@@ -121,7 +121,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="valor_quintal">Valor por quintal</label>
-                    <input value="{{ old('valor_quintal', $servico->valor_quintal ?? '') }}" type="input"  class="form-control" name="valor_quintal" id="valor_quintal" required placeholder="Valor por quintal">
+                    <input value="{{ old('valor_quintal', $servico->valor_quintal ?? '') }}" type="input"  class="form-control" name="valor_quintal" id="valor_quintal" data-mask="#.##0,00" data-mask-reverse="true" required placeholder="Valor por quintal">
                 </div>
             </div>
             <div class="col-md-6">
@@ -136,7 +136,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="valor_outros">Valor por outros tipos de cômodos</label>
-                    <input value="{{ old('valor_outros', $servico->valor_outros ?? '') }}" type="input"  class="form-control" name="valor_outros" id="valor_outros" required placeholder="Valor por outros">
+                    <input value="{{ old('valor_outros', $servico->valor_outros ?? '') }}" type="input"  class="form-control" name="valor_outros" id="valor_outros" data-mask="#.##0,00" data-mask-reverse="true" required placeholder="Valor por outros">
                 </div>
             </div>
             <div class="col-md-6">

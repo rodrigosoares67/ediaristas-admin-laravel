@@ -7,11 +7,7 @@
 @stop
 
 @section('content')
-  @if (session('mensagem'))
-    <div class="alert alert-success">
-      {{ session('mensagem') }}
-    </div>
-  @endif
+  @include('_mensagens_sessao')
 
   <div class="float-right">
     <a href="{{ route('servicos.create') }}" class="btn btn-success">Novo Serviço</a>

@@ -40,7 +40,7 @@ php artisan db:seed
 ```
 
 Usuário criado admin@admin.com  
-Senha: 123123123
+Senha: 123
 
 #### Iniciar o servidor de desenvolvimento
 

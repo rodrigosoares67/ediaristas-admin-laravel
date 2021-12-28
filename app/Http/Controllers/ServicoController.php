@@ -44,26 +44,22 @@ class ServicoController extends Controller {
     /**
      * Formulário de Edição
      *
-     * @param integer $id
+     * @param Servico $servico
      * @return View
      */
-    public function edit(int $id) {
-        $servico = Servico::findOrFail($id);
-
+    public function edit(Servico $servico) {
         return view('servicos.edit')->with('servico', $servico);
     }
 
     /**
      * Atualização do registros
      *
-     * @param integer $id
+     * @param Servico $servico
      * @param ServicoRequest $request
      * @return void
      */
-    public function update(int $id, ServicoRequest $request) {
+    public function update(Servico $servico, ServicoRequest $request) {
         $dados = $request->except(['_token', '_method']);
-
-        $servico = Servico::findOrFail($id);
 
         $servico->update($dados);
 
